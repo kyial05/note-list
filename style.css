@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Dancing+Script&family=Didact+Gothic&family=Martel:wght@300&display=swap");
+body {
+  margin: 0 auto;
+  background-image: url(./8b4dcf47c5e0621096568de1e6e1c760--iphone-backgrounds-phone-wallpapers.jpg);
+  background-size: 100%;
+  background-repeat: initial;
+  font-family: "Dancing Script", cursive;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px rgb(235, 232, 237);
+  color: rgb(145, 0, 116);
+}
+/* em, rem = 16px */
+.mainBlock {
+  width: 800px;
+  margin-bottom: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  flex-wrap: wrap;
+}
+.taskItem {
+  font-weight: 600;
+  color: rgb(145, 0, 116);
+}
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-repeat: initial;
+    background-image: url(./8b4dcf47c5e0621096568de1e6e1c760--iphone-backgrounds-phone-wallpapers.jpg);
+  }
+  .container {
+    margin: 0 auto;
+    display: flex;
+    width: 200px;
+  }
+  .mainBlock {
+    display: flex;
+    height: auto;
+    width: 350px;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-right: -10px;
+  }
+  body {
+    width: 400px;
+  }
+  .form {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+  }
+  #id {
+    display: grid;
+  }
+  .textIn {
+    margin-right: -150px;
+  }
+  .taskItem {
+    margin-left: -20px;
+    font-weight: 600;
+    margin-top: -20px;
+    width: 330px;
+    color: rgb(145, 0, 116);
+    text-shadow: 0px 0px 3px rgb(253, 251, 253);
+  }
+  .second {
+    margin-top: 50px;
+    margin-left: -205px;
+    margin-bottom: -10px;
+    margin-right: -15px;
+  }
+  #addBtn {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: -10px;
+    margin-right: 1px;
+    margin-left: 25px;
+  }
+}
+.form {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 5px;
+  opacity: 1;
+}
+li {
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr;
+  margin-bottom: 10px;
+}
+.textIn {
+  height: 2em;
+  text-align: center;
+  opacity: 1;
+}
+input,
+button {
+  outline: none;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 5px;
+}
+.task {
+  display: grid;
+  grid-template-columns: 9fr 1fr 1fr;
+  margin-top: 15px;
+  text-decoration: dashed;
+}
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: rgb(145, 0, 116);
+}
